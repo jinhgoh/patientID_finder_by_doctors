@@ -37,7 +37,7 @@ def IDseeker(input_sheets, givenDocName, col_index): # col_index 는 list array�
                         desigPaitentID.append(patientID2)
         except IndexError:
             # Handle the error if the 8th column does not exist
-            # pass # 다른건 다 비슷한데 최태웅 검사했을때 pass와 print 시 순서가 달라... 이거는 왜그런지 좀 연구해보자. #이거라서 다른게 아니라... 그냥 할때마다 좀 달라지나봄
+            # pass 
             print(f"Error: Sheet '{sheet_name}' does not have an 8th column.") # 여기는 있어야한다 혹은 pass나 continue
     print(desigPaitentID)
     print(len(desigPaitentID))
